@@ -1,5 +1,5 @@
 
-# AlphaNews - A News Web Application
+# GeneralKnowledge - A General Knowledge and Quizz web application
 
 - The main focus of this application is to aware the people about current affairs, general knowled and some interesting facts about everything.
 
