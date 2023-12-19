@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/imgs/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/quizStyleHome.css">
+    <link rel="stylesheet" href="/css/responsiveness.css">
+
+    <title>General Knowledge</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <small id="loadingIndicator">Loading...</small>
+            <h2>General Knowledge</h2>
+            <p><span id="todayDateTime"></span></p>
+            <p> <small> <button onclick="deleteCachingData()" class="refreshButton">Check for new updates</button>
+                </small> </p>
+        </header>
+
+        <section id="factGenerator">
+            <p>&#8220; <span id="factData"> Fact of the day is fetching...</span> &#8221;</p>
+        </section>
+
+        <!-- -------------------CURRENT AFFAIRS & HISTORY STARTED------------------ -->
+        <div class="historyOfToday blockSpacing">
+            <h3>History of Today</h3>
+            <ul>
+                <!-- top 5 history -->
+                <li><span> &#187; </span><span id="history0">Today's history is loading...</span></li>
+
+                <li><span> &#187; </span><span id="history1">Today's history is loading...</span></li>
+
+                <li><span> &#187; </span><span id="history2">Today's history is loading...</span></li>
+
+                <li><span> &#187; </span><span id="history3">Today's history is loading...</span></li>
+
+                <li><span> &#187; </span><span id="history4">Today's history is loading...</span></li>
+            </ul>
+        </div>
+        <div class="quizzes blockSpacing">
+            <h3>Quiz of the Day</h3>
+            <ul id="quizCenter">
+                <li><span> Q) </span> <span id="quiz0">Today's quiz is being loading...</span> </li>
+            </ul>
+        </div>
+        <div class="currentAffairs blockSpacing">
+            <h3>Recent Current Affairs</h3>
+            <ul>
+
+                <li><span> &#187; </span><span id="currentAffair0">Recent current affairs is loading...</span></li>
+
+                <li><span> &#187; </span><span id="currentAffair1">Recent current affairs is loading...</span></li>
+
+                <li><span> &#187; </span><span id="currentAffair2">Recent current affairs is loading...</span></li>
+
+                <li><span> &#187; </span><span id="currentAffair3">Recent current affairs is loading...</span></li>
+
+                <li><span> &#187; </span><span id="currentAffair4">Recent current affairs is loading...</span></li>
+
+                <li><span> &#187; </span><span id="currentAffair5">Recent current affairs is loading...</span></li>
+            </ul>
+        </div>
+        <!-- -------------------CURRENT AFFAIRS & HISTORY ENDED------------------- -->
+
+        <!-- -----------------------QUIZ SECTION STARTED-------------------------- -->
+        <section id="quizSection">
+            <h3> Quizzes on Web Techonlogies</h3>
+            <div id="quizCategories">
+                <a href="./pages/quizJavasctipt.html">
+                    <div id="javascriptQuiz" class="quizBox">
+                        <p>JavaScript</p>
+                        <small>Programming Language</small>
+                    </div>
+                </a>
+                <a href="./pages/quizPython.html">
+                    <div id="pythonQuiz" class="quizBox">
+                        <p>Python</p>
+                        <small>Programming Language</small>
+                    </div>
+                </a>
+                <a href="./pages/quizJava.html">
+                    <div id="javaQuiz" class="quizBox">
+                        <p>Java</p>
+                        <small>Programming Language</small>
+                    </div>
+                </a>
+                <a href="./pages/quizCandCpp.html">
+                    <div id="cAndCppQuiz" class="quizBox">
+                        <p>C & C++</p>
+                        <small>Programming Language</small>
+                    </div>
+                </a>
+                <a href="./pages/quizHTML.html">
+                    <div id="htmlQuiz" class="quizBox">
+                        <p>HTML</p>
+                        <small>Mark-up Language</small>
+                    </div>
+                </a>
+                <a href="./pages/quizCSS.html">
+                    <div id="cssQuiz" class="quizBox">
+                        <p>CSS</p>
+                        <small>Cascading Style Sheets</small>
+                    </div>
+                </a>
+                <a href="./pages/quizReact.html">
+                    <div id="reactQuiz" class="quizBox">
+                        <p>React</p>
+                        <small>Javascript Library</small>
+                    </div>
+                </a>
+                <a href="./pages/quizBootstrap.html">
+                    <div id="bootstrapQuiz" class="quizBox">
+                        <p>Bootstrap</p>
+                        <small>CSS Framework</small>
+                    </div>
+                </a>
+                <a href="./pages/quizPHP.html">
+                    <div id="phpQuiz" class="quizBox">
+                        <p>PHP</p>
+                        <small>Programming Language</small>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- -----------------------QUIZ SECTION ENDED--------------------------- -->
+
+    </div>
+
+    <footer>
+        <p>Developed by <a href="https://github.com/sailendrachettri"> Sailendra </a> © <span
+                id="currentYear">0000</span></p>
+        <p><a href="mailto:sailendra9083@gmail.com"> sailendra9083@gmail.com</a></p>
+    </footer>
+
+    <script src="/js/historyOfToday.js"></script>
+    <script src="./js/currentAffairs.js"></script>
+    <script src="./js/todaysQuiz.js"></script>
+    <script src="/js/footerScript.js"></script>
+    <script src="/js/dateAndTime.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/factOfTheDay.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/responsiveness.css">
+    <link rel="stylesheet" href="/css/quizStylePages.css">
+
+    <title>JAVA - General Knowledge</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Quiz on JAVA Language</h1>
+        <section>
+            <div class="questions">
+                <p>1) Which of the following is true about Java?</p>
+                <p>a) It is a purely procedural language</p>
+                <p>b) It supports multiple inheritance</p>
+                <p>c) It compiles code into machine language directly</p>
+                <p>d) None of the Above</p>
+                <button type="button" onclick="toggleAnswer('java1')">Show & Hide Answer</button>
+                <p id="java1" class="answer-box"><span class="answerTag"> Answer:</span> b) It supports multiple
+                    inheritance</p>
+            </div>
+
+            <div class="questions">
+                <p>2) Which keyword is used to prevent a class from being inherited?</p>
+                <p>a) abstract</p>
+                <p>b) final</p>
+                <p>c) static</p>
+                <p>d) extends</p>
+                <button type="button" onclick="toggleAnswer('java2')">Show & Hide Answer</button>
+                <p id="java2" class="answer-box"><span class="answerTag"> Answer:</span> b) final</p>
+            </div>
+
+            <div class="questions">
+                <p>3) Which of the following is not a valid Java identifier?</p>
+                <p>a) my_variable</p>
+                <p>b) _variable</p>
+                <p>c) 2variable</p>
+                <p>d) $variable</p>
+                <button type="button" onclick="toggleAnswer('java3')">Show & Hide Answer</button>
+                <p id="java3" class="answer-box"><span class="answerTag"> Answer:</span> c) 2variable</p>
+            </div>
+
+            <div class="questions">
+                <p>4) What is the role of the "this" keyword in Java?</p>
+                <p>a) Refers to the current instance of the class</p>
+                <p>b) Refers to the superclass</p>
+                <p>c) Refers to the parent object</p>
+                <p>d) Refers to a static method</p>
+                <button type="button" onclick="toggleAnswer('java4')">Show & Hide Answer</button>
+                <p id="java4" class="answer-box"><span class="answerTag"> Answer:</span> a) Refers to the current
+                    instance of the class</p>
+            </div>
+
+            <div class="questions">
+                <p>5) Which collection class allows elements to be accessed using a unique key?</p>
+                <p>a) ArrayList</p>
+                <p>b) LinkedList</p>
+                <p>c) HashMap</p>
+                <p>d) HashSet</p>
+                <button type="button" onclick="toggleAnswer('java5')">Show & Hide Answer</button>
+                <p id="java5" class="answer-box"><span class="answerTag"> Answer:</span> c) HashMap</p>
+            </div>
+
+            <div class="questions">
+                <p>6) In Java, which keyword is used to implement method overriding?</p>
+                <p>a) override</p>
+                <p>b) virtual</p>
+                <p>c) extends</p>
+                <p>d) @Override</p>
+                <button type="button" onclick="toggleAnswer('java6')">Show & Hide Answer</button>
+                <p id="java6" class="answer-box"><span class="answerTag"> Answer:</span> d) @Override </p>
+            </div>
+
+            <div class="questions">
+                <p>7) What is the default value of an instance variable in Java if it is not initialized?</p>
+                <p>a) 0</p>
+                <p>b) null</p>
+                <p>c) Depends on the data type</p>
+                <p>d) It throws a compilation error</p>
+                <button type="button" onclick="toggleAnswer('java7')">Show & Hide Answer</button>
+                <p id="java7" class="answer-box"><span class="answerTag"> Answer:</span> b) null</p>
+            </div>
+
+            <div class="questions">
+                <p>8) Which loop is guaranteed to execute at least once in Java?</p>
+                <p>a) while loop</p>
+                <p>b) for loop</p>
+                <p>c) do-while loop</p>
+                <p>d) enhanced for loop</p>
+                <button type="button" onclick="toggleAnswer('java8')">Show & Hide Answer</button>
+                <p id="java8" class="answer-box"><span class="answerTag"> Answer:</span> c) do-while loop</p>
+            </div>
+
+            <div class="questions">
+                <p>9)What does the "super" keyword refer to in Java? </p>
+                <p>a) Calls the superclass constructor</p>
+                <p>b) Refers to the current instance of the class</p>
+                <p>c) Refers to the subclass</p>
+                <p>d) Calls a static method</p>
+                <button type="button" onclick="toggleAnswer('java9')">Show & Hide Answer</button>
+                <p id="java9" class="answer-box"><span class="answerTag"> Answer:</span> a) Calls the superclass
+                    constructor</p>
+            </div>
+
+            <div class="questions">
+                <p>10) Which access modifier restricts access the least in Java?</p>
+                <p>a) private</p>
+                <p>b) protected</p>
+                <p>c) public</p>
+                <p>d) default (no modifier)</p>
+                <button type="button" onclick="toggleAnswer('java10')">Show & Hide Answer</button>
+                <p id="java10" class="answer-box"><span class="answerTag"> Answer:</span> c) public</p>
+            </div>
+
+            <div class="questions">
+                <p>11) What is the purpose of the "static" keyword in Java?</p>
+                <p>a) It allows a method to be overridden</p>
+                <p>b) It allows access to non-static members</p>
+                <p>c) It signifies that a variable or method belongs to the class</p>
+                <p>d) It prevents inheritance of a class</p>
+                <button type="button" onclick="toggleAnswer('java11')">Show & Hide Answer</button>
+                <p id="java11" class="answer-box"><span class="answerTag"> Answer:</span> c) It signifies that a
+                    variable or method belongs to the class</p>
+            </div>
+
+            <div class="questions">
+                <p>12) Which exception is thrown when an array is accessed with an invalid index?</p>
+                <p>a) ArrayIndexOutOfBoundsException</p>
+                <p>b) IndexOutOfBoundsException</p>
+                <p>c) ArrayException</p>
+                <p>d) InvalidArrayIndexException</p>
+                <button type="button" onclick="toggleAnswer('java12')">Show & Hide Answer</button>
+                <p id="java12" class="answer-box"><span class="answerTag"> Answer:</span> a)
+                    ArrayIndexOutOfBoundsException</p>
+            </div>
+
+            <div class="questions">
+                <p>13) Which statement is used to exit from a loop in Java?</p>
+                <p>a) return</p>
+                <p>b) break</p>
+                <p>c) continue</p>
+                <p>d) exit</p>
+                <button type="button" onclick="toggleAnswer('java13')">Show & Hide Answer</button>
+                <p id="java13" class="answer-box"><span class="answerTag"> Answer:</span> b) break</p>
+            </div>
+
+            <div class="questions">
+                <p>14) What is the difference between "==" and ".equals()" when comparing objects in Java?</p>
+                <p>a) They are identical and can be used interchangeably</p>
+                <p>b) "==" compares object references, while ".equals()" compares object contents</p>
+                <p>c) ".equals()" compares object references, while "==" compares object contents</p>
+                <p>d) They are both used for deep comparison of objects</p>
+                <button type="button" onclick="toggleAnswer('java14')">Show & Hide Answer</button>
+                <p id="java14" class="answer-box"><span class="answerTag"> Answer:</span> b) "==" compares object
+                    references, while ".equals()" compares object contents</p>
+            </div>
+
+            <div class="questions">
+                <p>15) Which of the following is true about the "static" keyword in Java?</p>
+                <p>a) It can be used with local variables.</p>
+                <p>b) Static methods can access non-static members directly.</p>
+                <p>c) Static methods can be overridden in subclasses.</p>
+                <p>d) Static variables are initialized when an object is created.</p>
+                <button type="button" onclick="toggleAnswer('java15')">Show & Hide Answer</button>
+                <p id="java15" class="answer-box"><span class="answerTag"> Answer:</span> b) Static methods can access
+                    non-static members directly.</p>
+            </div>
+
+        </section>
+
+        <h2>Explore more categories</h2>
+        <section class="quizFooterTags">
+            <a href="./quizJava.html">
+                <p>JAVA</p>
+            </a>
+            <a href="./quizBootstrap.html">
+                <p>BOOTSTRAP</p>
+            </a>
+            <a href="./quizPython.html">
+                <p>PYTHON</p>
+            </a>
+            <a href="./quizJavasctipt.html">
+                <p>JAVASCRIPT</p>
+            </a>
+            <a href="./quizPHP.html">
+                <p>PHP</p>
+            </a>
+            <a href="./quizReact.html">
+                <p>REACT</p>
+            </a>
+            <a href="./quizCSS.html">
+                <p>CSS</p>
+            </a>
+            <a href="./quizCandCpp.html">
+                <p>C & C++</p>
+            </a>
+            <a href="/">
+                <p class="goToHomeTag">HOMEPAGE</p>
+            </a>
+        </section>
+    </section>
+
+    <footer>
+        <p>Developed by <a href="https://github.com/sailendrachettri"> Sailendra </a> © <span
+                id="currentYear">0000</span>
+        </p>
+        <p> <a href="mailto:sailendra9083@gmail.com"> sailendra9083@gmail.com</a></p>
+    </footer>
+
+    <script src="/js/footerScript.js"></script>
+
+    <script src="../js/quizScript.js"></script>
+</body>
+
+</html>

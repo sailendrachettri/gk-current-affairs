@@ -1,0 +1,6 @@
+API: https://rapidapi.com/malaithiru370/api/current-affairs-of-india/
+
+DEV:
+- Navbar
+- Footer
+- Quiz in differend domains (dev)

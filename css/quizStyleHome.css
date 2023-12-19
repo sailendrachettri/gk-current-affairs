@@ -1,0 +1,39 @@
+/* -----------------------QUIZ STYLE FOR HOMEPAGE STARTED----------------------- */
+#quizSection {
+    margin: 3rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#quizCategories {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#quizCategories a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.quizBox {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 3px whitesmoke;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.quizBox p {
+    font-size: 2rem;
+}
+
+.quizBox:hover {
+    transform: scale(1.1);
+}
+
+/* -----------------------QUIZ STYLE FOR HOMEPAGE ENDED----------------------- */

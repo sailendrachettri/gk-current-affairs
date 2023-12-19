@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/responsiveness.css">
+    <link rel="stylesheet" href="/css/quizStylePages.css">
+
+    <title>PHP - General Knowledge</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Quiz on PHP Language</h1>
+        <section>
+            <div class="questions">
+                <p>1) What does PHP stand for?</p>
+                <p>a) Personal Home Page</p>
+                <p>b) Pretext Hypertext Processor</p>
+                <p>c) PHP: Hypertext Preprocessor</p>
+                <p>d) Programming Hyper Processor</p>
+                <button type="button" onclick="toggleAnswer('php1')">Show & Hide Answer</button>
+                <p id="php1" class="answer-box"><span class="answerTag"> Answer:</span> c) PHP: Hypertext Preprocessor
+                </p>
+            </div>
+
+            <div class="questions">
+                <p>2) In PHP, what function is used to check the length of a string?</p>
+                <p>a) str_length()</p>
+                <p>b) count()</p>
+                <p>c) len()</p>
+                <p>d) strlen()</p>
+                <button type="button" onclick="toggleAnswer('php2')">Show & Hide Answer</button>
+                <p id="php2" class="answer-box"><span class="answerTag"> Answer:</span> d) strlen()</p>
+            </div>
+
+            <div class="questions">
+                <p>3) What type of variable is used to store a sequence of characters in PHP?</p>
+                <p>a) string</p>
+                <p>b) text</p>
+                <p>c) sequence</p>
+                <p>d) line</p>
+                <button type="button" onclick="toggleAnswer('php3')">Show & Hide Answer</button>
+                <p id="php3" class="answer-box"><span class="answerTag"> Answer:</span> a) string</p>
+            </div>
+
+            <div class="questions">
+                <p>4) Which of the following is NOT a valid way to start a PHP variable name?</p>
+                <p>a) $</p>
+                <p>b) Letter</p>
+                <p>c) _</p>
+                <p>d) Number</p>
+                <button type="button" onclick="toggleAnswer('php4')">Show & Hide Answer</button>
+                <p id="php4" class="answer-box"><span class="answerTag"> Answer:</span> d) Number</p>
+            </div>
+
+            <div class="questions">
+                <p>5) In PHP, how do you start a foreach loop for an array?</p>
+                <p>a) for_each ($array as $item)</p>
+                <p>b) foreach ($array as $item)</p>
+                <p>c) for ($array as $item)</p>
+                <p>d) loop ($array as $item)</p>
+                <button type="button" onclick="toggleAnswer('php5')">Show & Hide Answer</button>
+                <p id="php5" class="answer-box"><span class="answerTag"> Answer:</span> b) foreach ($array as $item)</p>
+            </div>
+
+            <div class="questions">
+                <p>6) What PHP function is used to connect to a MySQL database?</p>
+                <p>a) mysql_connect()</p>
+                <p>b) db_connect()</p>
+                <p>c) mysqli_connect()</p>
+                <p>d) connect_mysql()</p>
+                <button type="button" onclick="toggleAnswer('php6')">Show & Hide Answer</button>
+                <p id="php6" class="answer-box"><span class="answerTag"> Answer:</span> c) mysqli_connect()</p>
+            </div>
+
+            <div class="questions">
+                <p>7) Which operator is used for concatenating two strings in PHP?</p>
+                <p>a) .</p>
+                <p>b) +</p>
+                <p>c) &</p>
+                <p>d) ,</p>
+                <button type="button" onclick="toggleAnswer('php7')">Show & Hide Answer</button>
+                <p id="php7" class="answer-box"><span class="answerTag"> Answer:</span> a) .</p>
+            </div>
+
+            <div class="questions">
+                <p>8) What function in PHP is used to redirect the user to a different URL?</p>
+                <p>a) redirect()</p>
+                <p>b) header_location()</p>
+                <p>c) forward()</p>
+                <p>d) location()</p>
+                <button type="button" onclick="toggleAnswer('php8')">Show & Hide Answer</button>
+                <p id="php8" class="answer-box"><span class="answerTag"> Answer:</span> c) header_location()</p>
+            </div>
+
+            <div class="questions">
+                <p>9) What does the term "superglobals" refer to in PHP?</p>
+                <p>a) Variables accessible only within functions</p>
+                <p>b) Variables that can be accessed from any part of the script</p>
+                <p>c) Constants defined for global use</p>
+                <p>d) Reserved keywords in PHP</p>
+                <button type="button" onclick="toggleAnswer('php9')">Show & Hide Answer</button>
+                <p id="php9" class="answer-box"><span class="answerTag"> Answer:</span> b) Variables that can be
+                    accessed from any part of the script</p>
+            </div>
+
+            <div class="questions">
+                <p>10) What is the default method for sending form data in PHP?</p>
+                <p>a) GET</p>
+                <p>b) POST</p>
+                <p>c) PUT</p>
+                <p>d) REQUEST</p>
+                <button type="button" onclick="toggleAnswer('php10')">Show & Hide Answer</button>
+                <p id="php10" class="answer-box"><span class="answerTag"> Answer:</span> b) POST</p>
+            </div>
+
+            <div class="questions">
+                <p>11) Which PHP function is used to check if a file exists?</p>
+                <p>a) file_exist()</p>
+                <p>b) isfile()</p>
+                <p>c) file_exists()</p>
+                <p>d) checkfile()</p>
+                <button type="button" onclick="toggleAnswer('php11')">Show & Hide Answer</button>
+                <p id="php11" class="answer-box"><span class="answerTag"> Answer:</span> c) file_exists()</p>
+            </div>
+
+            <div class="questions">
+                <p>12) How do you end a PHP statement?</p>
+                <p>a) ;</p>
+                <p>b) :</p>
+                <p>c) .</p>
+                <p>d) {}</p>
+                <button type="button" onclick="toggleAnswer('php12')">Show & Hide Answer</button>
+                <p id="php12" class="answer-box"><span class="answerTag"> Answer:</span> a) ;</p>
+            </div>
+
+            <div class="questions">
+                <p>13) Which of the following is NOT a valid comparison operator in PHP?</p>
+                <p>a)&lt;=&gt; </p>
+                <p>b) ===</p>
+                <p>c) &gt;&lt; </p>
+                <p>d) !=</p>
+                <button type="button" onclick="toggleAnswer('php13')">Show & Hide Answer</button>
+                <p id="php13" class="answer-box"><span class="answerTag"> Answer:</span> c) &gt;&lt;</p>
+            </div>
+
+            <div class="questions">
+                <p>14) What function in PHP is used to destroy a session?</p>
+                <p>a) session_end()</p>
+                <p>b) destroy_session()</p>
+                <p>c) session_destroy()</p>
+                <p>d) end_session()</p>
+                <button type="button" onclick="toggleAnswer('php14')">Show & Hide Answer</button>
+                <p id="php14" class="answer-box"><span class="answerTag"> Answer:</span> c) session_destroy()</p>
+            </div>
+
+            <div class="questions">
+                <p>15) Which PHP function is used to find the position of the first occurrence of a substring within a
+                    string?</p>
+                <p>a) strpos()</p>
+                <p>b) strposition()</p>
+                <p>c) stringpos()</p>
+                <p>d) findpos()</p>
+                <button type="button" onclick="toggleAnswer('php15')">Show & Hide Answer</button>
+                <p id="php15" class="answer-box"><span class="answerTag"> Answer:</span> a) strpos()</p>
+            </div>
+
+        </section>
+
+        <h2>Explore more categories</h2>
+        <section class="quizFooterTags">
+            <a href="./quizJava.html">
+                <p>JAVA</p>
+            </a>
+            <a href="./quizBootstrap.html">
+                <p>BOOTSTRAP</p>
+            </a>
+            <a href="./quizPython.html">
+                <p>PYTHON</p>
+            </a>
+            <a href="./quizJavasctipt.html">
+                <p>JAVASCRIPT</p>
+            </a>
+            <a href="./quizPHP.html">
+                <p>PHP</p>
+            </a>
+            <a href="./quizReact.html">
+                <p>REACT</p>
+            </a>
+            <a href="./quizCSS.html">
+                <p>CSS</p>
+            </a>
+            <a href="./quizCandCpp.html">
+                <p>C & C++</p>
+            </a>
+            <a href="/">
+                <p class="goToHomeTag">HOMEPAGE</p>
+            </a>
+        </section>
+    </section>
+
+    <footer>
+        <p>Developed by <a href="https://github.com/sailendrachettri"> Sailendra </a> © <span
+                id="currentYear">0000</span>
+        </p>
+        <p> <a href="mailto:sailendra9083@gmail.com"> sailendra9083@gmail.com</a></p>
+    </footer>
+
+    <script src="/js/footerScript.js"></script>
+
+    <script src="../js/quizScript.js"></script>
+</body>
+
+</html>

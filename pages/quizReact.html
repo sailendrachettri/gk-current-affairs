@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/responsiveness.css">
+    <link rel="stylesheet" href="/css/quizStylePages.css">
+
+    <title>React - General Knowledge</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Quiz on REACT Library</h1>
+        <section>
+            <div class="questions">
+                <p>1) What does JSX stand for in React?</p>
+                <p>a) JavaScript XML</p>
+                <p>b) JSON Extensible</p>
+                <p>c) JavaScript Extension</p>
+                <p>d) JavaScript XHR</p>
+                <button type="button" onclick="toggleAnswer('react1')">Show & Hide Answer</button>
+                <p id="react1" class="answer-box"><span class="answerTag"> Answer:</span> a) JavaScript XML</p>
+            </div>
+
+            <div class="questions">
+                <p>2) In React, what function is used to change the state and re-render the component?</p>
+                <p>a) setState()</p>
+                <p>b) modifyState()</p>
+                <p>c) changeState()</p>
+                <p>d) updateState()</p>
+                <button type="button" onclick="toggleAnswer('react2')">Show & Hide Answer</button>
+                <p id="react2" class="answer-box"><span class="answerTag"> Answer:</span> a) setState()</p>
+            </div>
+
+            <div class="questions">
+                <p>3) Which lifecycle method is invoked immediately after a component is inserted into the DOM?</p>
+                <p>a) componentDidMount()</p>
+                <p>b) componentWillMount()</p>
+                <p>c) componentDidUpdate()</p>
+                <p>d) componentWillUpdate()</p>
+                <button type="button" onclick="toggleAnswer('react3')">Show & Hide Answer</button>
+                <p id="react3" class="answer-box"><span class="answerTag"> Answer:</span> a) componentDidMount()</p>
+            </div>
+
+            <div class="questions">
+                <p>4) What is the purpose of React Router?</p>
+                <p>a) State management in React</p>
+                <p>b) Routing in React applications</p>
+                <p>c) Animation effects in React components</p>
+                <p>d) Component styling in React</p>
+                <button type="button" onclick="toggleAnswer('react4')">Show & Hide Answer</button>
+                <p id="react4" class="answer-box"><span class="answerTag"> Answer:</span> b) Routing in React
+                    applications</p>
+            </div>
+
+            <div class="questions">
+                <p>5) What is the tool used for bundling React applications?</p>
+                <p>a) Grunt</p>
+                <p>b) Gulp</p>
+                <p>c) Webpack</p>
+                <p>d) Parcel</p>
+                <button type="button" onclick="toggleAnswer('react5')">Show & Hide Answer</button>
+                <p id="react5" class="answer-box"><span class="answerTag"> Answer:</span> c) Webpack</p>
+            </div>
+
+            <div class="questions">
+                <p>6) Which method is used to prevent unnecessary re-renders in React?</p>
+                <p>a) shouldComponentUpdate()</p>
+                <p>b) componentWillReceiveProps()</p>
+                <p>c) componentDidUpdate()</p>
+                <p>d) componentWillUnmount()</p>
+                <button type="button" onclick="toggleAnswer('react6')">Show & Hide Answer</button>
+                <p id="react6" class="answer-box"><span class="answerTag"> Answer:</span> a) shouldComponentUpdate()</p>
+            </div>
+
+            <div class="questions">
+                <p>7) What does the useState hook do in React?</p>
+                <p>a) Adds state to functional components</p>
+                <p>b) Handles side effects in React components</p>
+                <p>c) Manages context in React</p>
+                <p>d) Creates reusable components</p>
+                <button type="button" onclick="toggleAnswer('react7')">Show & Hide Answer</button>
+                <p id="react7" class="answer-box"><span class="answerTag"> Answer:</span> a) Adds state to functional
+                    components</p>
+            </div>
+
+            <div class="questions">
+                <p>8) Which React feature is used for passing data down to a component's children?</p>
+                <p>a) props</p>
+                <p>b) state</p>
+                <p>c) context</p>
+                <p>d) refs</p>
+                <button type="button" onclick="toggleAnswer('react8')">Show & Hide Answer</button>
+                <p id="react8" class="answer-box"><span class="answerTag"> Answer:</span> a) props</p>
+            </div>
+
+            <div class="questions">
+                <p>9) What is the purpose of keys in React when rendering a list of elements?</p>
+                <p>a) They identify elements in the DOM</p>
+                <p>b) They provide styling information</p>
+                <p>c) They handle event propagation</p>
+                <p>d) They help React identify each element uniquely during updates</p>
+                <button type="button" onclick="toggleAnswer('react9')">Show & Hide Answer</button>
+                <p id="react9" class="answer-box"><span class="answerTag"> Answer:</span> d) They help React identify
+                    each element uniquely during updates</p>
+            </div>
+
+            <div class="questions">
+                <p>10) Which method is used to perform side effects in React functional components?</p>
+                <p>a) componentDidMount()</p>
+                <p>b) useEffect()</p>
+                <p>c) componentWillMount()</p>
+                <p>d) componentWillUpdate()</p>
+                <button type="button" onclick="toggleAnswer('react10')">Show & Hide Answer</button>
+                <p id="react10" class="answer-box"><span class="answerTag"> Answer:</span> b) useEffect()</p>
+            </div>
+
+            <div class="questions">
+                <p>11) What is the main benefit of using PropTypes in React?</p>
+                <p>a) Improved performance</p>
+                <p>b) Type checking for component props</p>
+                <p>c) Enhanced debugging capabilities</p>
+                <p>d) Simplified state management</p>
+                <button type="button" onclick="toggleAnswer('react11')">Show & Hide Answer</button>
+                <p id="react11" class="answer-box"><span class="answerTag"> Answer:</span> b) Type checking for
+                    component props</p>
+            </div>
+
+            <div class="questions">
+                <p>12) What is the purpose of React Fragments?</p>
+                <p>a) They are used to create virtual DOM elements</p>
+                <p>b) They improve performance in React applications</p>
+                <p>c) They allow grouping of elements without adding extra nodes to the DOM</p>
+                <p>d) They handle events in React components</p>
+                <button type="button" onclick="toggleAnswer('react12')">Show & Hide Answer</button>
+                <p id="react12" class="answer-box"><span class="answerTag"> Answer:</span> c) They allow grouping of
+                    elements without adding extra nodes to the DOM</p>
+            </div>
+
+            <div class="questions">
+                <p>13) What is the role of ReactDOM in React?</p>
+                <p>a) Manages component hierarchy</p>
+                <p>b) Renders React components in the DOM</p>
+                <p>c) Handles component state</p>
+                <p>d) Optimizes React application performance</p>
+                <button type="button" onclick="toggleAnswer('react13')">Show & Hide Answer</button>
+                <p id="react13" class="answer-box"><span class="answerTag"> Answer:</span> b) Renders React components
+                    in the DOM</p>
+            </div>
+
+            <div class="questions">
+                <p>14) Which method is used to update the state based on the previous state in React?</p>
+                <p>a) modifyState()</p>
+                <p>b) setState()</p>
+                <p>c) updateState()</p>
+                <p>d) setStateWithPrevious()</p>
+                <button type="button" onclick="toggleAnswer('react14')">Show & Hide Answer</button>
+                <p id="react14" class="answer-box"><span class="answerTag"> Answer:</span> b) setState()</p>
+            </div>
+
+            <div class="questions">
+                <p>15) What does Redux provide in React applications?</p>
+                <p>a) Local component state management</p>
+                <p>b) Server-side rendering</p>
+                <p>c) A predictable state container</p>
+                <p>d) Routing functionality</p>
+                <button type="button" onclick="toggleAnswer('react15')">Show & Hide Answer</button>
+                <p id="react15" class="answer-box"><span class="answerTag"> Answer:</span> c) A predictable state
+                    container</p>
+            </div>
+
+        </section>
+
+        <h2>Explore more categories</h2>
+        <section class="quizFooterTags">
+            <a href="./quizJava.html">
+                <p>JAVA</p>
+            </a>
+            <a href="./quizPython.html">
+                <p>PYTHON</p>
+            </a>
+            <a href="./quizBootstrap.html">
+                <p>BOOTSTRAP</p>
+            </a>
+            <a href="./quizJavasctipt.html">
+                <p>JAVASCRIPT</p>
+            </a>
+            <a href="./quizPHP.html">
+                <p>PHP</p>
+            </a>
+            <a href="./quizReact.html">
+                <p>REACT</p>
+            </a>
+            <a href="./quizCSS.html">
+                <p>CSS</p>
+            </a>
+            <a href="./quizCandCpp.html">
+                <p>C & C++</p>
+            </a>
+            <a href="/">
+                <p class="goToHomeTag">HOMEPAGE</p>
+            </a>
+        </section>
+    </section>
+
+    <footer>
+        <p>Developed by <a href="https://github.com/sailendrachettri"> Sailendra </a> © <span
+                id="currentYear">0000</span>
+        </p>
+        <p> <a href="mailto:sailendra9083@gmail.com"> sailendra9083@gmail.com</a></p>
+    </footer>
+
+    <script src="/js/footerScript.js"></script>
+
+    <script src="../js/quizScript.js"></script>
+</body>
+
+</html>
