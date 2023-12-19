@@ -21,6 +21,7 @@ body {
     min-width: 80vw;
     border: 1px solid #353535;
     padding: 0.5rem;
+    padding-left: 1.1rem;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -125,3 +126,17 @@ footer p a:hover {
 }
 
 /* ---------------------FOOTER STYLE FOR EVERY PAGE ENDED--------------------- */
+/* --------------------------RESPONSIVENESS STARTED--------------------------- */
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: large;
+    }
+
+    .container {
+        min-width: 88vw;
+        padding-left: 1.3rem;
+    }
+
+}
+
+/* --------------------------RESPONSIVENESS ENDED----------------------------- */
