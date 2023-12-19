@@ -56,7 +56,8 @@ Start the Server
 - Explore quiz categories on technical domain
 
 # Screenshots
-<p><img src="https://drive.google.com/uc?export=view&id=1_Ni0AJXBJC80fNifnOY5WKvYFJE6IUMZ" alt="Homepage"></p>
+<p><img src="https://drive.google.com/uc?export=view&id=1vzLfFyux3hyVvEo0fJzpyMPsL1x5xau_" alt="Homepage"></p>
+<p><img src="https://drive.google.com/uc?export=view&id=13hJAjCQz9hb6CcDyCfVSMcCg6l8DjaO6" alt="Homepage"></p>
 
 # Contact
 <p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
