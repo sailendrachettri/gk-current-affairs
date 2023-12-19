@@ -21,7 +21,7 @@ body {
     min-width: 80vw;
     border: 1px solid #353535;
     padding: 0.5rem;
-    padding-left: 1.1rem;
+    padding-left: 1rem;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ footer p a:hover {
 
     .container {
         min-width: 88vw;
-        padding-left: 1.3rem;
+        padding: 1rem
     }
 
 }
