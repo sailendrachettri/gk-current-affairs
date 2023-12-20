@@ -15,16 +15,13 @@ async function historyOfToday() {
         const response3 = await fetch(url3, options3);
         const result3 = await response3.text();
 
-
-        // ------------------------TO STORE PREVIOUS DATA--------------------------
-
         // checking for previous data stored
-        let alreadyPresent = 1;
-        if (localStorage.getItem('previousHistoryData') == null) {
-            alreadyPresent = 0;
+        let alreadyPresent = false;
+        if (localStorage.getItem('previousHistoryData') != null) {
+            alreadyPresent = true;
         }
 
-
+        // ------------------------TO STORE PREVIOUS DATA--------------------------
         // store content
         let previousHistoryData = [];
         for (let i = 0; i < 5; i++) {
@@ -36,28 +33,27 @@ async function historyOfToday() {
 
         // ----------------------------PAGE LOADING INDICATOR----------------------------
         // idendify todays date
+        let getYesterdaysDate = 0;
         let todaysDate = new Date();
         let getTodaysDateOnly = todaysDate.getDate();
 
-        // getting the previous year saved date from local storage
-        let getYesterdaysDate = localStorage.getItem("previousHistoryData");
-        getYesterdaysDate = JSON.parse(getYesterdaysDate);
-        getYesterdaysDate = removeNewlinesAndTabs(getYesterdaysDate[0]);
-        if (todaysDate <= 9)
-            getYesterdaysDate = getYesterdaysDate[0];
-        else
-            getYesterdaysDate = getYesterdaysDate[0] + getYesterdaysDate[1]
+        if (alreadyPresent == true) {
+            // getting the previous year saved date from local storage
+            getYesterdaysDate = localStorage.getItem("previousHistoryData");
+            getYesterdaysDate = JSON.parse(getYesterdaysDate);
+            getYesterdaysDate = removeNewlinesAndTabs(getYesterdaysDate[0]);
+            if (todaysDate <= 9)
+                getYesterdaysDate = getYesterdaysDate[0];
+            else
+                getYesterdaysDate = getYesterdaysDate[0] + getYesterdaysDate[1]
 
-        // checking if localStorage is null or not - if null then user is serving content for first time
-        // if not present then make it false and assume date as zero
-        getYesterdaysDate = Number(getYesterdaysDate)
-
-        if (alreadyPresent == 0 || getTodaysDateOnly != getYesterdaysDate) {
-            getYesterdaysDate = 0;
+            // checking if localStorage is null or not - if null then user is serving content for first time
+            // if not present then make it false and assume date as zero
+            getYesterdaysDate = Number(getYesterdaysDate)
         }
 
         // if today and yesterday's date is not same the reload the page once
-        if (getYesterdaysDate == 0) {
+        if (alreadyPresent == false || getTodaysDateOnly != getYesterdaysDate) {
             loadingIndicator.innerHTML = "New information fetched successfully!";
             loadingIndicator.style.color = 'green';
 
