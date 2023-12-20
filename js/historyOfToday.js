@@ -54,10 +54,7 @@ async function historyOfToday() {
         if (alreadyPresent == false || getTodaysDateOnly != getYesterdaysDate) {
             loadingIndicator.innerHTML = "New information fetched successfully!";
             loadingIndicator.style.color = 'green';
-
-            setTimeout(() => {
-                location.reload();
-            }, 3000);
+            location.reload();
 
         } else {
             loadingIndicator.innerHTML = "Already updated successfully";
@@ -88,5 +85,5 @@ for (let i = 0; i < retreveHistoryData.length; i++) {
 
 // A function to remove new line and tabs - extra unnecessary characters
 function removeNewlinesAndTabs(str) {
-    return str.replace(/(?:\\[tn])|},|"|date|description|:/g, '').replace(/,/, ' : ');
+    return str.replace(/(?:\\[tn])|},|"|date|description|:/g, '').replace(/,/, ' : ').replace(/\\/g, '"');
 }
