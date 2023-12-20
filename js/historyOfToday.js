@@ -14,55 +14,45 @@ async function historyOfToday() {
         loadingIndicator.innerHTML = "Auto checking for new updates...";
         const response3 = await fetch(url3, options3);
         const result3 = await response3.text();
-
-        // checking for previous data stored
-        let alreadyPresent = false;
+        
         if (localStorage.getItem('previousHistoryData') != null) {
-            alreadyPresent = true;
-        }
+            let todaysDate = new Date().getDate();
 
-        // ------------------------TO STORE PREVIOUS DATA--------------------------
-        // store content
-        let previousHistoryData = [];
-        for (let i = 0; i < 5; i++) {
-            previousHistoryData.push(result3.split("{")[i + 1])
-        }
-
-        previousHistoryData = JSON.stringify(previousHistoryData);
-        localStorage.setItem("previousHistoryData", previousHistoryData);
-
-        // ----------------------------PAGE LOADING INDICATOR----------------------------
-        // idendify todays date
-        let getYesterdaysDate = 0;
-        let todaysDate = new Date();
-        let getTodaysDateOnly = todaysDate.getDate();
-
-        if (alreadyPresent == true) {
             // getting the previous year saved date from local storage
             getYesterdaysDate = localStorage.getItem("previousHistoryData");
             getYesterdaysDate = JSON.parse(getYesterdaysDate);
             getYesterdaysDate = removeNewlinesAndTabs(getYesterdaysDate[0]);
 
-            getYesterdaysDate = (getTodaysDateOnly <= 9) ? getYesterdaysDate[0] : (getYesterdaysDate[0] + getYesterdaysDate[1]);
+            getYesterdaysDate = (todaysDate <= 9) ? getYesterdaysDate[0] : (getYesterdaysDate[0] + getYesterdaysDate[1]);
+            getYesterdaysDate = Number(getYesterdaysDate);
 
-            // checking if localStorage is null or not - if null then user is serving content for first time
-            // if not present then make it false and assume date as zero
-            getYesterdaysDate = Number(getYesterdaysDate)
+            if(todaysDate != getYesterdaysDate)
+            {
+                loadingIndicator.innerHTML = "New information fetched successfully!";
+                loadingIndicator.style.color = 'green';
+                location.reload();
+            } else{
+                // if today and yesterday's date is not same the reload the page once
+                loadingIndicator.innerHTML = "Already updated successfully";
+                loadingIndicator.style.color = 'green';
+                setInterval(() => {
+                    loadingIndicator.style.display = 'none'
+                }, 3000);
+            }
+        } else{
+                loadingIndicator.innerHTML = "New information fetched successfully!";
+                loadingIndicator.style.color = 'green';
+                setTimeout(() => {
+                    location.reload();
+                }, 3000);
         }
 
-        // if today and yesterday's date is not same the reload the page once
-        if (alreadyPresent == false || getTodaysDateOnly != getYesterdaysDate) {
-            loadingIndicator.innerHTML = "New information fetched successfully!";
-            loadingIndicator.style.color = 'green';
-            location.reload();
-
-        } else {
-            loadingIndicator.innerHTML = "Already updated successfully";
-            loadingIndicator.style.color = 'green';
+        let previousHistoryData = [];
+        for (let i = 0; i < 5; i++) {
+            previousHistoryData.push(result3.split("{")[i + 1])
         }
-        setInterval(() => {
-            loadingIndicator.style.display = 'none'
-        }, 3000);
+        previousHistoryData = JSON.stringify(previousHistoryData);
+        localStorage.setItem("previousHistoryData", previousHistoryData); 
 
     } catch (error) {
         console.error(error);
