@@ -43,7 +43,9 @@ async function historyOfToday() {
             getYesterdaysDate = JSON.parse(getYesterdaysDate);
             getYesterdaysDate = removeNewlinesAndTabs(getYesterdaysDate[0]);
 
-            getYesterdaysDate = (todaysDate <= 9) ? getYesterdaysDate[0] : (getYesterdaysDate[0] + getYesterdaysDate[1]);
+            getYesterdaysDate = (getTodaysDateOnly <= 9) ? getYesterdaysDate[0] : (getYesterdaysDate[0] + getYesterdaysDate[1]);
+
+
 
             // checking if localStorage is null or not - if null then user is serving content for first time
             // if not present then make it false and assume date as zero
