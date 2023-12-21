@@ -15,6 +15,7 @@
 #quizCategories a {
     text-decoration: none;
     color: whitesmoke;
+    margin: 1rem;
 }
 
 .quizBox {
@@ -22,7 +23,6 @@
     border-radius: 5px;
     width: fit-content;
     padding: 1.5rem;
-    margin: 1rem;
     box-shadow: 2px 2px 3px whitesmoke;
     cursor: pointer;
     transition: transform 0.2s;
