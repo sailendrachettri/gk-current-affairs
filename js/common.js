@@ -1,6 +1,6 @@
-function reloadPage(){
-    location.reload();
-}
+// function reloadPage(){
+//     location.reload();
+// }
 
 function deleteCachingData() {
     let choice = confirm("You are going to delete previous content and reload!");
