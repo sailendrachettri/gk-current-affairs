@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+#quizSection p{
+    color: #5784b1;
+}
+
 #quizCategories a {
     text-decoration: none;
     color: whitesmoke;
