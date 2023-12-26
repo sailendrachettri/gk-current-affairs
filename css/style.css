@@ -36,6 +36,7 @@ h3 {
 
 ul li {
     font-family: var(--para-font);
+    font-size: 1.2rem;
 }
 
 header {
@@ -76,11 +77,12 @@ header p {
 
 #factGenerator p {
     margin: 4rem 0 2rem;
-    font-size: larger;
+    font-size: 1.2rem;
     color: #838383;
     padding: 0 1rem;
     font-family: var(--para-font);
     line-height: 1.4rem;
+
 }
 
 .blockSpacing {
@@ -95,6 +97,10 @@ li {
     padding-top: 1.4rem;
     text-align: justify;
     line-height: 1.4rem;
+}
+
+ul li .arrow, .doubleQuote{
+    color: #5784b1;
 }
 
 /* ----------------------------FOOTER STYLE STARTED---------------------------- */
