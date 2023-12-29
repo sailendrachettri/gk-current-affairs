@@ -32,7 +32,7 @@ async function historyOfToday() {
                 loadingIndicator.style.color = 'green';
                 setTimeout(() => {
                     location.reload();
-                }, 3000);
+                }, 1000);
             } else{
                 // if today and yesterday's date is not same the reload the page once
                 loadingIndicator.innerHTML = "Already updated successfully";
@@ -46,7 +46,7 @@ async function historyOfToday() {
                 loadingIndicator.style.color = 'green';
                 setTimeout(() => {
                     location.reload();
-                }, 3000);
+                }, 1500);
         }
 
         // saving it to localStorage after only we are getting the date from previous day
